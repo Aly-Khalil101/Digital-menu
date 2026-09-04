@@ -1,0 +1,131 @@
+
+body {background-color: bisque;
+/* display: flex;
+flex-direction: column; */
+margin: 0;}
+main{margin: 12px;}
+.cafe-name {
+  width:60vw;
+  height: auto;
+  margin: 2vw auto;
+  color: brown;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(30px,5vw,64px);
+  padding-bottom: 10px ;
+  border-bottom: brown 3px double ;
+  text-shadow: 1px 1px 1px black;
+   
+}
+.nav-group{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: clamp(15px,2vw,32px);
+  padding: 5px;
+  flex-wrap: wrap;
+  
+}
+.nav-item{
+  color: black;
+  border: 3px double;
+  padding: 7px;
+  border-radius: 10px; 
+}
+.section-name{
+  color: brown;
+  font-size: clamp(18px,5vw,42px) ;
+  width: 30vw;
+  height: auto;
+  margin: 5vw auto 2vw;
+  text-align: center;
+  padding: 2px;
+  border: 5px double;
+}
+.product-image{
+   width: 130px;
+   height: 130px;
+   object-fit: contain;
+   margin: 0 auto;
+}
+.product-name{
+  padding-bottom: 3px;
+  border-bottom: 3px double;
+  margin: 10px auto 5px;
+  font-size: clamp(17px,3vw,35px);
+}
+.product-description{
+  margin: 10px auto 10px;
+font-size: clamp(13px,2vw,23px);
+}
+.product-price{
+  font-size: clamp(15px,2vw,25px);
+  text-align: center;
+  width: 85px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px double;
+}
+.product-card{
+   display: flex;
+   flex-direction: column;
+        width: 20vw;
+        height: auto;
+        /* font-size: 4vw; */
+         border: 1px solid black;
+         border-radius: 5px;
+         padding: 10px;
+         margin: 10px;
+         color: rgb(36, 26,5);
+}
+  .menu-section{
+  border: 4px double;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 20px; */
+}
+#about-us{
+  margin: 10px;
+  text-align: center;
+}
+#about-us h2
+{
+  margin: 10px;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(82, 57, 34);
+    color: bisque;
+    margin-top: auto;
+    padding: 1px 0;
+}
+@media screen and (min-width:1050px) {
+  .cafe-name{
+    width: 500px;
+  }
+  .section-name{
+    width: 280px;
+  }
+  .product-image{
+    width: 160px;
+    height: 160px;
+  }
+  .product-price{
+    width: 110px;
+    border-bottom: 5px double;
+  }
+}
+@media screen  and (max-width:650px){
+ .cafe-name{
+  width: 220px;
+ }
+  .product-card{
+    width: 250px
+  }
+  .product-price{
+     width: 60px;
+  }
+}
